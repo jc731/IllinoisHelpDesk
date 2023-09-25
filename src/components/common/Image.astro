@@ -15,7 +15,6 @@ type ImageType = {
 }
 
 const props = Astro.props;
-
 if (props.alt === undefined || props.alt === null) {
   throw new Error();
 }
@@ -39,7 +38,6 @@ if (!props.decoding) {
 const _image = await findImage(props.src);
 
 let image: ImageType | undefined = undefined;
-
 if (_image !== null && typeof _image === 'object') {
   image = await getImagesOptimized(_image, props, astroAsseetsOptimizer);
 } else if (typeof _image === 'string' && (_image.startsWith('http://') || _image.startsWith('https://'))) {
@@ -47,6 +45,6 @@ if (_image !== null && typeof _image === 'object') {
 } else if (_image) {
   image = await getImagesOptimized(_image, props);
 }
----
 
+---
 {!image ? <Fragment /> : <img src={image.src} {...image.attributes} />}

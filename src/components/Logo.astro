@@ -1,7 +1,10 @@
 ---
 import { SITE } from '~/utils/config';
+import Image from '~/components/common/Image.astro'
+import logo from '~/assets/CIHD-mark.png'
 ---
 
-<span class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white">
-  🚀 {SITE?.name}
+<span class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white max-w-[80px]">
+  <Image src={logo} alt="CIHG Logo" class="hidden xl:inline-block" />
+  <span class="md:ml-4 hidden xl:inline">{SITE?.name}</span>
 </span>

@@ -78,7 +78,7 @@ const config = yaml.load(fs.readFileSync('src/config.yaml', 'utf8')) as {
   analytics?: unknown;
 };
 
-const DEFAULT_SITE_NAME = 'Website';
+const DEFAULT_SITE_NAME = 'Central Illinois Helpdesk';
 
 const getSite = () => {
   const _default = {
@@ -86,7 +86,6 @@ const getSite = () => {
     site: undefined,
     base: '/',
     trailingSlash: false,
-
     googleSiteVerificationId: '',
   };
 
