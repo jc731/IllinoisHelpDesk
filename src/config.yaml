@@ -1,5 +1,5 @@
 site:
-  name: Central Illinois Helpdesk
+  name: CI Helpdesk
   site: 'https://centralillinoishelpdesk.com'
   base: '/'
   trailingSlash: false
@@ -78,8 +78,10 @@ ui:
         heading: rgb(0 0 0)
         muted: rgb(40 40 40)
         bgPage: rgb(255 255 255)
-        primary: rgb(0 124 220)
-        secondary: rgb(30 58 138)
+        # primary: rgb(0 124 220)
+        primary: rgb(249 115 22)
+        # secondary: rgb(30 58 138)
+        secondary: rgb(194, 65, 12)
         accent: rgb(109 40 217)
         info: rgb(119 182 234)
         success: rgb(54 211 153)
@@ -90,12 +92,14 @@ ui:
     dark:
       fonts: {}
       colors:
-        default: rgb(247, 248, 248)
-        heading: rgb(247, 248, 248)
-        muted: rgb(200, 188, 208)
+        default: rgb(247 248 248)
+        heading: rgb(247 248 248)
+        muted: rgb(200 188 208)
         bgPage: rgb(3 6 32)
-        primary: rgb(29 78 216)
-        secondary: rgb(30 58 138)
+        # primary: rgb(29 78 216)
+        primary: rgb(243, 144, 54)
+        # secondary: rgb(30 58 138)
+        secondary: rgb(194, 65, 12)
         accent: rgb(135 77 2267)
         info: rgb(58 191 248)
         success: rgb(54 211 153)

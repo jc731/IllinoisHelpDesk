@@ -1,4 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
+// const { iconsPlugin, getIconCollections } = require("@egoist/tailwindcss-icons")
 
 module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,md,svelte,ts,tsx,vue}'],
@@ -18,6 +19,12 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [
+    require('@tailwindcss/typography'),
+    // iconsPlugin({
+    //   //select icon collections here:
+    //   collections: getIconCollections(['tabler', 'flat-color-icons', 'line-md', 'svg-spinners'])
+    // })
+  ],
   darkMode: 'class',
 };

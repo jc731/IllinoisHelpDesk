@@ -1,5 +1,6 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
+
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
@@ -39,19 +40,10 @@ export default defineConfig({
     icon({
       include: {
         tabler: ['*'],
-        'flat-color-icons': [
-          'template',
-          'gallery',
-          'approval',
-          'document',
-          'advertising',
-          'currency-exchange',
-          'voice-presentation',
-          'business-contact',
-          'database',
-          'print'
-
-        ],
+        'flat-color-icons': ['*'],
+        'line-md': ['*'],
+        'svg-spinners': ['*'],
+        'clarity': ['*'],
       },
     }),
 
