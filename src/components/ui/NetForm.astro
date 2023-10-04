@@ -15,6 +15,7 @@ const {
 <form netlify netlify-honeypot name={name} method="POST">
   <p class="hidden"><label>Don’t fill this out if you’re human: <input name="bot-field" /></label></p>
   <input type="hidden" name="form-name" value="feedback" />
+  <input type="hidden" name="referer" value = "" id="referrer" />
   {inputs &&
     inputs.map(
     ({ type = 'text', name, label = '', autocomplete = 'on', placeholder = '' }) =>
@@ -91,3 +92,12 @@ const {
     )
   }
 </form>
+
+<script>
+  window.onload = () => {
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const params = Object.fromEntries(urlSearchParams.entries())
+    const referrerInput = document.getElementById('referrer') as HTMLInputElement
+    referrerInput.value = params.ref
+  }
+</script>
