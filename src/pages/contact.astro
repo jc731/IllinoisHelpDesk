@@ -10,14 +10,16 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <HeroText tagline="Contact" title="Let's Connect!" />
+  <!-- <HeroText tagline="Contact" title="Let's Connect!" /> -->
 
   <ContactUs
+    name = "contact"
     title="We can't wait to get started!"
     subtitle="Drop a message below and let us know how we can help"
     inputs={[
       {
         type: 'text',
+        inputType: 'text',
         name: 'name',
         label: 'Name',
       },
@@ -27,7 +29,7 @@ const metadata = {
         label: 'Email',
       },
       {
-        type: 'number',
+        type: 'text',
         name: 'number',
         label: 'Phone Number',
       },
@@ -35,10 +37,8 @@ const metadata = {
     textarea={{
       label: 'Message',
     }}
-    description="Our support team typically responds within 24 business hours."
+    description="Our team typically responds within 24 hours."
   />
-
-  <!-- Features2 Widget ************** -->
 
   <Features2
     title="We are here to help!"

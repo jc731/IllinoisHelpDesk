@@ -200,9 +200,11 @@ export interface Collapse {
 export interface Form {
   inputs?: Array<Input>;
   textarea?: Textarea;
+  radio?: Array<Input>;
   disclaimer?: Disclaimer;
   button?: string;
   description?: string;
+  name?: string;
 }
 
 // WIDGETS

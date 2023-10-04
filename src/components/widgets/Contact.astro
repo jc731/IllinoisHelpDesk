@@ -1,5 +1,5 @@
 ---
-import FormContainer from '~/components/ui/Form.astro';
+import FormContainer from '~/components/ui/NetForm.astro';
 import Headline from '~/components/ui/Headline.astro';
 import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
 import type { Contact } from '~/types';
@@ -13,7 +13,7 @@ const {
   disclaimer,
   button,
   description,
-
+  name,
   id,
   isDark = false,
   classes = {},
@@ -23,11 +23,11 @@ const {
 
 <WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-7xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
   <Headline title={title} subtitle={subtitle} tagline={tagline} />
-
   {
     inputs && (
       <div class="flex flex-col max-w-xl mx-auto rounded-lg backdrop-blur border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 shadow p-4 sm:p-6 lg:p-8 w-full">
         <FormContainer
+          name={name}
           inputs={inputs}
           textarea={textarea}
           disclaimer={disclaimer}
