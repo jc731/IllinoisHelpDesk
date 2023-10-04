@@ -24,7 +24,7 @@ export const headerData = {
   //   //   href: '/startups',
   //   // },
   // ],
-  actions: [{ text: 'Login', href: '/login', target: '_blank' }],
+  actions: [{ text: 'Submit a Ticket', href: 'https://cihelpdesk.freshdesk.com/support/tickets/new', target: '_blank' }],
 }
 
 export const footerData = {
