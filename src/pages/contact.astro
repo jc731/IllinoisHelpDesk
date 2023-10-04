@@ -10,13 +10,11 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <!-- HeroText Widget ******************* -->
-
   <HeroText tagline="Contact" title="Let's Connect!" />
 
   <ContactUs
-    title="Drop us a message today!"
-    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
+    title="We can't wait to get started!"
+    subtitle="Drop a message below and let us know how we can help"
     inputs={[
       {
         type: 'text',
@@ -28,13 +26,14 @@ const metadata = {
         name: 'email',
         label: 'Email',
       },
+      {
+        type: 'number',
+        name: 'number',
+        label: 'Phone Number',
+      },
     ]}
     textarea={{
       label: 'Message',
-    }}
-    disclaimer={{
-      label:
-        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
     }}
     description="Our support team typically responds within 24 business hours."
   />
@@ -46,33 +45,34 @@ const metadata = {
     items={[
       {
         title: 'General support',
-        description: `Chat with us for inquiries related to account management, website navigation, payment issues, accessing purchased templates or general questions about the website's functionality.`,
+        description: `We're here to help you get back up and moving. If you're currently experiencing some technical issues, email us now at: <br /><br /> support@centralillinoishelpdesk.com.`
+      },
+      {
+        title: 'Project Support',
+        description:
+          'We love one time projects too, if you have a major infrastracture project or need help with a specific issue, we would love to talk with you. ',
       },
       {
         title: 'Contact sales',
         description:
-          'Chat with us for questions about purchases, customization options, licensing for commercial use, inquiries about specific template, etc.',
+          'Email our sales team with questions about purchases, customization options, and how we can best serve your needs. <br /><br /> sales@centralillinoishelpdesk.com',
       },
-      {
-        title: 'Technical support',
-        description:
-          'Chat with us when facing issues like template installation, problems editing difficulties, compatibility issues with software or download errors, or other technical challenges related to using the templates.',
-      },
-      {
-        title: 'Phone',
-        description: '+1 (234) 567-890',
-        icon: 'tabler:headset',
-      },
-      {
-        title: 'Email',
-        description: 'contact@support.com',
-        icon: 'tabler:mail',
-      },
-      {
-        title: 'Location',
-        description: '1234 Lorem Ipsum St, 12345, Miami, EEUU',
-        icon: 'tabler:map-pin',
-      },
+
+      // {
+      //   title: 'Phone',
+      //   description: '+1 (217) 555-5555',
+      //   icon: 'tabler:headset',
+      // },
+      // {
+      //   title: 'Email',
+      //   description: 'support@centralillinoishelpdesk.com',
+      //   icon: 'tabler:mail',
+      // },
+      // {
+      //   title: 'Location',
+      //   description: 'Serving Central Illinois',
+      //   icon: 'tabler:map-pin',
+      // },
     ]}
   />
 </Layout>
