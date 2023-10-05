@@ -1,0 +1,42 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Central Illinois Helpdesk',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+
+  <Hero
+    actions={[
+      { text: 'Want to Submit a Ticket?', href: 'https://cihelpdesk.freshdesk.com/' },
+    ]}
+    image={{ src: '~/assets/images/worker.svg', alt: 'Central Illinois Helpdesk', type: 'svg', width: '800px', height: '600px'}}>
+    <Fragment slot="title">
+      Thanks! we'll be in touch soon!
+    </Fragment>
+  </Hero>
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Submit your first ticket today',
+        href: 'https://cihelpdesk.freshdesk.com/',
+        target: '_blank',
+        icon: 'line-md:clipboard-to-clipboard-check-transition',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Central Illinois <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">HelpDesk</span>
+    </Fragment>
+    <Fragment slot="subtitle">
+      <span class="text-justify">You've made it this far, sign up and let's get started today. We can't wait to help you with your IT needs.</span>
+    </Fragment>
+  </CallToAction>
+</Layout>
