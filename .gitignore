@@ -25,3 +25,4 @@ package-lock.json
 .astro
 # Local Netlify folder
 .netlify
+pnpm-lock.yaml
