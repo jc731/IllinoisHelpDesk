@@ -13,6 +13,7 @@
     "lint:eslint": "eslint . --ext .js,.ts,.astro"
   },
   "dependencies": {
+    "@astrojs/netlify": "^4.1.0",
     "@astrojs/rss": "^4.0.1",
     "@astrojs/sitemap": "^3.0.4",
     "@astrolib/analytics": "^0.4.2",
