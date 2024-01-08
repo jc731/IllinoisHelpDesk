@@ -1,6 +1,7 @@
 ---
-const { htmlFor } = Astro.props
+const { htmlFor, required } = Astro.props;
 ---
+
 <label for={htmlFor} class="absolute z-10 -top-2  left-4 inline-block bg-white px-1 text-xs font-light text-gray-900">
-  <slot />
+  <slot />{required ? '*' : ''}
 </label>

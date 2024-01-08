@@ -1,0 +1,23 @@
+---
+import Label from '~/components/ui/forms/Label.astro'
+import Input from '~/components/ui/forms/Input.astro'
+const { htmlFor, type, name, id, placeholder, required } = Astro.props
+
+---
+<div class="mb-3 relative rounded-md shadow-sm">
+  <Label htmlFor={ htmlFor } {...(required ? { required: true } : {})}>
+    <slot name="label" />
+  </Label>
+  <div class="relative flex flex-grow items-stretch">
+    <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+      <slot name="icon" />
+    </div>
+    <Input 
+      type={type} 
+      name={name} 
+      id={id} 
+      placeholder={placeholder}
+      {...(required ? { required: true } : {})}
+    />
+  </div>
+</div>

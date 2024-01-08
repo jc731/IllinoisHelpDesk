@@ -1,7 +1,9 @@
 ---
-import Button from '~/components/ui/Button.astro'
-import Label from '~/components/ui/contactForm/Label.astro'
-import Input from '~/components/ui/contactForm/Input.astro'
+import Input from '~/components/ui/forms/Input.astro'
+import FormItem from '~/components/ui/forms/FormItem.astro'
+import PhoneInput from '~/components/ui/forms/PhoneInput.astro'
+export const prerender = false
+
 ---
 <div class="flex flex-col max-w-[40rem] mx-auto border rounded-xs border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 shadow p-2 sm:p-3 lg:p-6 w-full">
   <form 
@@ -16,40 +18,20 @@ import Input from '~/components/ui/contactForm/Input.astro'
     </p>
     <Input type="hidden" name="form-name" value="ContactUs" />
     <Input type="hidden" name="referer" value="website" id="referrer" />
-    
-    <div class="mb-3 relative rounded-md shadow-sm">
-      <Label htmlFor="name">Name</Label>
-      <div class="relative flex flex-grow items-stretch">
-        <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-          <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-            <path d="M7 8a3 3 0 100-6 3 3 0 000 6zM14.5 9a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM1.615 16.428a1.224 1.224 0 01-.569-1.175 6.002 6.002 0 0111.908 0c.058.467-.172.92-.57 1.174A9.953 9.953 0 017 18a9.953 9.953 0 01-5.385-1.572zM14.5 16h-.106c.07-.297.088-.611.048-.933a7.47 7.47 0 00-1.588-3.755 4.502 4.502 0 015.874 2.636.818.818 0 01-.36.98A7.465 7.465 0 0114.5 16z" />
-          </svg>
-        </div>
-        <Input type="text" name="name" id="name" placeholder="Your Name" />
-      </div>
-    </div>
-    <div class="mb-3 relative rounded-md shadow-sm">
-      <Label htmlFor="email">Email</Label>
-      <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-        <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-          <path d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z" />
-          <path d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z" />
-        </svg>
-      </div>
-      <Input type="email" name="email" id="email" placeholder="you@example.com" />
-    </div>
-    <div class="mb-3 relative rounded-md shadow-sm">
-      <Label htmlFor="phone">Phone Number</Label>
-      <div class="absolute inset-y-0 left-0 flex items-center">
-        <label for="country" class="sr-only">Country</label>
-        <select id="country" name="country" autocomplete="country" class="h-full rounded-sm border-0 bg-transparent py-0 pl-3 pr-2 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm">
-          <option>US</option>
-          <option>CA</option>
-          <option>EU</option>
-        </select>
-      </div>
-      <input type="text" name="phone-number" id="phone-number" class="block w-full rounded-md border-0 py-1.5 pl-16 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6" placeholder="+1 (555) 987-6543">
-    </div>
+    <FormItem htmlFor="name" type="text" label="Name" id="name" placeholder="Your Name" required>
+      <span slot="label">Name</span>
+      <svg slot="icon" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path d="M7 8a3 3 0 100-6 3 3 0 000 6zM14.5 9a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM1.615 16.428a1.224 1.224 0 01-.569-1.175 6.002 6.002 0 0111.908 0c.058.467-.172.92-.57 1.174A9.953 9.953 0 017 18a9.953 9.953 0 01-5.385-1.572zM14.5 16h-.106c.07-.297.088-.611.048-.933a7.47 7.47 0 00-1.588-3.755 4.502 4.502 0 015.874 2.636.818.818 0 01-.36.98A7.465 7.465 0 0114.5 16z" />
+      </svg>
+    </FormItem>
+    <FormItem htmlFor="email" type="email" label="Email" id="email" placeholder="you@example.com" required>
+      <span slot="label">Email</span>
+      <svg slot="icon" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z" />
+        <path d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z" />
+      </svg>
+    </FormItem>
+    <PhoneInput />
     <div class="mb-3 relative rounded-md shadow-sm">
       <div class="mt-2">
       <textarea rows="4" name="comment" id="comment" class="block w-full rounded-md border-0 py-1.5 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6" placeholder="Let us know how we can help you out"></textarea>
@@ -57,8 +39,6 @@ import Input from '~/components/ui/contactForm/Input.astro'
     </div>
     <button type="submit" class="btn-primary px-20 rounded-md">Submit</button>
   </form>
-
-
 </div>
 <div class="mt-3 text-center">
   <p class="text-sm text-gray-600 dark:text-gray-400">Our team typically responds within 24 hours.</p>

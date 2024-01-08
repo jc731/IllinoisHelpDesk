@@ -21,7 +21,7 @@ export default defineConfig({
   site: SITE.site,
   base: SITE.base,
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
-  output: 'static',
+  output: 'hybrid',
   integrations: [tailwind({
     applyBaseStyles: false
   }), sitemap(), mdx(), icon({
