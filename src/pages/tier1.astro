@@ -19,7 +19,6 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-
   <Hero
     actions={[
       {
@@ -31,152 +30,152 @@ const metadata = {
       },
       // { text: 'Login', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/illustrations/itsupport.svg', alt: 'Central Illinois Helpdesk', type: 'svg', width: '800px', height: '600px'}}>
+    image={{
+      src: '~/assets/images/illustrations/itsupport.svg',
+      alt: 'Central Illinois Helpdesk',
+      type: 'svg',
+      width: '800px',
+      height: '600px',
+    }}
+  >
     <Fragment slot="title">
-      <span class="text-accent dark:text-white highlight">Tier 1:</span> Printeres to Passwords
+      <span class="text-accent dark:text-white highlight">Tier 1:</span> From Printeres to Passwords
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">Central Illinois Helpdesk</span> is a full-service IT company, specially geared toward small businesses. 
-        <span class="hidden md:inline"> We offer a wide range of services ranging from traditional helpdesk email, chat, or in person support to full blown IT project management. </span>
+      <span class="font-semibold">Front Line Support</span> to handle fundamental IT issues such as password resets, hardware
+      and software troubleshooting, ticket triaging, and more.
     </Fragment>
+
+    <Note />
   </Hero>
-
-  <Note />
-
   <Features
-    id="features"
-    tagline="Why CI HElpdesk?"
-    title="Running a business is hard enough. "
-    subtitle="Don't get stuck without tech support"
+    id="tier1"
+    tagline="Your Front Lines"
+    title="What is Tier 1 Support?"
     items={[
       {
-        title: 'Helpdesk Support Simplified',
+        title: 'Basic Troubleshooting',
         description:
-          'IT issues are frustrating, a quick email, chat, or call and we will get you back to work with the help from our local technical experts.',
+          'Encounter a glitch? Reach out to us via email, chat, or phone, and our local technical experts will swiftly resolve your basic IT issues, ensuring minimal downtime.',
         icon: 'clarity:application-solid',
       },
       {
-        title: 'Security Management',
+        title: 'Password Resets',
         description:
-          "Don't become a headline. We'll help keep your data safe, giving you peace of mind and ensuring your business's data is safe.",
+          "Everyon'es locked themselves out (us included), don't become a headline. We'll help keep your data safe, giving you peace of mind and ensuring your business's data is safe.",
         icon: 'clarity:lock-solid',
       },
       {
-        title: 'IT Project Support',
+        title: 'Software Support',
         description:
-          "IT Projects are tricky. We'll help you navigate the process. Requirements gathering, project management, and implementation.",
-        icon: 'clarity:bar-chart-solid',
+          'From installation to troubleshooting, our team is here to support all your software needs. We provide guidance through the complexities of software setup, usage, and optimization.',
+        icon: 'clarity:cog-solid',
       },
       {
-        title: 'Tier 1 and 2+ Support',
+        title: 'Documentation',
         description:
-          'Printers, desktops, laptops, servers, and more. Issues happen, wasting time is not an option to when you need to keep your business going.',
-        icon: 'clarity:administrator-solid',
+          'Access comprehensive support for all your hardware, from printers to servers. We provide fast, reliable solutions to keep your operations smooth and efficient.',
+        icon: 'clarity:file-solid',
       },
       {
-        title: 'Custom Development',
+        title: 'Triage and Esclation',
         description:
-          "Your business is unique, we'll build custom solutions to help you get the most out of your technology investment and ensuring you're operating at peak efficiency.",
-        icon: 'clarity:code-line',
+          'Complex issues can critically impact your business. Our tier 1 team will help identify workarounds, get your ticket infront of the right tier 2 expert, and ensure that your issues are fully resolved quickly.',
+        icon: 'clarity:flow-chart-solid',
       },
       {
-        title: 'Cloud Services',
+        title: 'Account Management',
         description:
-          "Your infrastracture is the core of your business. There is no reason to navigate this complex infrastructure alone. We'll help you navigate",
+          'Navigate the complexities of your IT infrastructure with our expert account management services. We partner with you to maximize your technology investments and enhance operational efficiency.',
         icon: 'clarity:cloud-network-line',
       },
     ]}
   />
   <Prices
-  title="Our prices"
-  subtitle="Choose the plan that works for your business"
-  prices={[
-    {
-      title: 'essentials',
-      subtitle: 'Great for low volume support',
-      price: 29,
-      period: 'per month',
-      items: [
-        {
-          description: 'Unlimited Remote Tier 1 Support',
+    title="Our prices"
+    subtitle="Choose the plan that works for your business"
+    prices={[
+      {
+        title: 'essentials',
+        subtitle: 'Great for low volume support',
+        price: 299,
+        period: 'per month',
+        items: [
+          {
+            description: 'Unlimited Remote Tier 1 Support',
+          },
+          {
+            description: '48-Hour Ticket Response Time',
+          },
+          {
+            description: 'Free Project Consultations',
+          },
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Get started',
+          href: '#',
         },
-        {
-          description: '48-Hour Ticket Response Time',
-        },
-        {
-          description: 'Discounted Tier 2+ Support',
-        },
-        {
-          description: 'Free Project Consultations',
-        },
-      ],
-      callToAction: {
-        target: '_blank',
-        text: 'Get started',
-        href: '#',
       },
-    },
-    {
-      title: 'elevated',
-      subtitle: 'Perfect for growing businesses',
-      price: 79,
-      period: 'Per Month',
-      items: [
-        {
-          description: 'Everything from Essentials',
+      {
+        title: 'elevated',
+        subtitle: 'Perfect for growing businesses',
+        price: 699,
+        period: 'Per Month',
+        items: [
+          {
+            description: 'Everything from Essentials',
+          },
+          {
+            description: '24-Hour Ticket Response Time',
+          },
+          {
+            description: 'Unlimited Remote Tier 2 Support',
+          },
+          {
+            description: 'Quarterly Technology Reviews',
+          },
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Get started',
+          href: '#',
         },
-        {
-          description: '24-Hour Ticket Response Time',
-        },
-        {
-          description: 'Unlimited Remote Tier 2 Support',
-        },
-        {
-          description: 'Dedicated Account Specialist',
-        },
-        {
-          description: 'Automatic Ticket Escalation',
-        },
-
-      ],
-      callToAction: {
-        target: '_blank',
-        text: 'Get started',
-        href: '#',
+        hasRibbon: true,
+        ribbonTitle: 'popular',
       },
-      hasRibbon: true,
-      ribbonTitle: 'popular',
-    },
-    {
-      title: 'rapid response',
-      subtitle: 'Best for companies with critical needs',
-      price: 199,
-      period: 'Per Month',
-      items: [
-        {
-          description: 'Everything from Elevated',
+      {
+        title: 'rapid response',
+        subtitle: 'Best for companies with critical needs',
+        price: 1599,
+        period: 'Per Month',
+        items: [
+          {
+            description: 'Everything from Elevated',
+          },
+          {
+            description: '1-Hour Ticket Response Time',
+          },
+          {
+            description: 'Free Local Onsite Support',
+          },
+          {
+            description: 'Dedicated Knowledge Base Portal',
+          },
+          {
+            description: 'Monthly Technology Reviews',
+          },
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Get started',
+          href: '#',
         },
-        {
-          description: '1-Hour Ticket Response Time',
-        },
-        {
-          description: 'Discounted Onsite Support',
-        },
-        {
-          description: 'Dedicated Knowledge Base Portal',
-        },
-      ],
-      callToAction: {
-        target: '_blank',
-        text: 'Get started',
-        href: '#',
       },
-    },
-  ]}
+    ]}
   />
-  <Content
+  <!-- <Content
     isReversed
     tagline="Your Personalized Helpdesk Tech Staff"
     title="Local IT Support Services"
@@ -200,24 +199,28 @@ const metadata = {
     image={{
       src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
       alt: 'Local IT Support Services Image',
-    }}>
+    }}
+  >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Remote and OnSite Technical Support</h3>
-       We ensure our local team is available to help you with your IT needs both onsite and remotely. 
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Remote and OnSite Technical Support
+      </h3>
+      We ensure our local team is available to help you with your IT needs both onsite and remotely.
     </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Content>
-
+  </Content> -->
+  <Note />
   <Features2
     title="Most Popular Services"
     subtitle="What do businesses use CI Helpdesk for?"
     items={[
       {
         title: 'Tier 1 Support',
-        description: "Printers, password resets, account setups, and even propriatary software troubleshooting. We've done it all.",
+        description:
+          "Printers, password resets, account setups, and even propriatary software troubleshooting. We've done it all.",
         icon: 'flat-color-icons:template',
       },
       // {
@@ -235,7 +238,7 @@ const metadata = {
       {
         title: 'IT Project Management',
         description:
-          "Helping clients navigate the complexities of major IT projects. We help with everything from requirements gathering to implementation.",
+          'Helping clients navigate the complexities of major IT projects. We help with everything from requirements gathering to implementation.',
         icon: 'flat-color-icons:timeline',
       },
       {
@@ -246,7 +249,8 @@ const metadata = {
       },
       {
         title: 'Device Management',
-        description: "We're helping to manage the complexity of modern end point management to ensure devices are up to date and secure.",
+        description:
+          "We're helping to manage the complexity of modern end point management to ensure devices are up to date and secure.",
         icon: 'flat-color-icons:multiple-devices',
       },
       // {
@@ -262,10 +266,12 @@ const metadata = {
       // },
       {
         title: 'Security Management',
-        description: "In the age of constant threats, we're helping safeguard business data and digital assets, giving our clients peace of mind.",
+        description:
+          "In the age of constant threats, we're helping safeguard business data and digital assets, giving our clients peace of mind.",
         icon: 'flat-color-icons:privacy',
       },
-    ]}>
+    ]}
+  >
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
@@ -273,12 +279,7 @@ const metadata = {
 
   <!-- HighlightedPosts Widget ******* -->
 
-  <!-- <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-  `} /> -->
+  <BlogLatestPosts title="Learn More" } />
 
   <!-- <FAQs
     title="Frequently Asked Questions"
@@ -318,10 +319,9 @@ const metadata = {
       },
     ]} /> -->
 
-
   <!-- <Stats
     stats={[
-      { title: 'Tickets', amount: '4,027' },
+      { title: 'Tickets', amount: '3,027' },
       { title: 'Stars', amount: '24.8K' },
       { title: 'Forks', amount: '10.3K' },
       { title: 'Users', amount: '48.4K' },
@@ -344,7 +344,7 @@ const metadata = {
       Central Illinois <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">HelpDesk</span>
     </Fragment>
     <Fragment slot="subtitle">
-      <span class="text-justify">You've made it this far, sign up and let's get started today. We can't wait to help you with your IT needs.</span>
+      <span class="text-justify">You've made it this far, sign up and let's get started today.</span>
     </Fragment>
   </CallToAction>
 </Layout>
