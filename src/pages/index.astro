@@ -1,25 +1,24 @@
 ---
-import Layout from '~/layouts/PageLayout.astro'
-import Hero from '~/components/widgets/Hero.astro'
-import Note from '~/components/widgets/Note.astro'
-import Features from '~/components/widgets/Features.astro'
-import Features2 from '~/components/widgets/Features2.astro'
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
 // import Steps from '~/components/widgets/Steps.astro'
-import Content from '~/components/widgets/Content.astro'
+import Content from '~/components/widgets/Content.astro';
 // import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro'
 // import FAQs from '~/components/widgets/FAQs.astro'
 // import Stats from '~/components/widgets/Stats.astro'
-import CallToAction from '~/components/widgets/CallToAction.astro'
-import Prices from '~/components/widgets/Pricing.astro'
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import OurPrice from '~/components/common/OurPrice.astro';
 
 const metadata = {
   title: 'Central Illinois Helpdesk',
   ignoreTitleTemplate: true,
-}
+};
 ---
 
 <Layout metadata={metadata}>
-
   <Hero
     actions={[
       {
@@ -31,18 +30,30 @@ const metadata = {
       },
       { text: 'Knowledge Base', href: '/knowledgebase' },
     ]}
-    image={{ src: '~/assets/images/worker.svg', alt: 'Central Illinois Helpdesk', type: 'svg', width: '800px', height: '600px'}}>
+    image={{
+      src: '~/assets/images/worker.svg',
+      alt: 'Central Illinois Helpdesk',
+      type: 'svg',
+      width: '800px',
+      height: '600px',
+    }}
+  >
     <Fragment slot="title">
-      <span class="text-accent dark:text-white highlight">IT:</span> Simplified <span class="hidden xl:inline">for small businesses</span>
+      <span class="text-accent dark:text-white highlight">IT:</span> Simplified <span class="hidden xl:inline"
+        >for small businesses</span
+      >
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">Central Illinois Helpdesk</span> is a full-service IT company geared toward small businesses. 
-        <span class="hidden md:inline">We offer various services, from traditional helpdesk email, chat, or in-person support to full-blown IT project management.</span>
+        <span class="font-semibold">Central Illinois Helpdesk</span> is a full-service IT company geared toward small businesses.
+        <span class="hidden md:inline"
+          >We offer various services, from traditional helpdesk email, chat, or in-person support to full-blown IT
+          project management.</span
+        >
+      </span>
     </Fragment>
   </Hero>
-
   <Note />
 
   <Features
@@ -53,19 +64,17 @@ const metadata = {
     items={[
       {
         title: 'Helpdesk Support Simplified',
-        description:
-         `IT issues are frustrating. With a quick email, chat, or call, we will get you back to work with the help of our local technical experts.`, 
+        description: `IT issues are frustrating. With a quick email, chat, or call, we will get you back to work with the help of our local technical experts.`,
         icon: 'clarity:application-solid',
       },
       {
         title: 'Security Management',
-        description: `Don't become a headline. We'll help keep your data safe, giving you peace of mind and ensuring your business's data is secure.`, 
+        description: `Don't become a headline. We'll help keep your data safe, giving you peace of mind and ensuring your business's data is secure.`,
         icon: 'clarity:lock-solid',
       },
       {
         title: 'IT Project Support',
-        description:
-          `IT Projects are tricky. We'll help you navigate the process: requirements gathering, project management, and implementation.`,
+        description: `IT Projects are tricky. We'll help you navigate the process: requirements gathering, project management, and implementation.`,
         icon: 'clarity:bar-chart-solid',
       },
       {
@@ -75,99 +84,17 @@ const metadata = {
       },
       {
         title: 'Custom Development',
-        description:
-         `Your business is unique we'll build custom solutions to help you maximize your technology investment and ensure you're operating at peak efficiency.`, 
+        description: `Your business is unique we'll build custom solutions to help you maximize your technology investment and ensure you're operating at peak efficiency.`,
         icon: 'clarity:code-line',
       },
       {
         title: 'Cloud and Physical Services',
-        description:
-         `Your infrastructure is the core of your business. There is no reason to navigate this complex infrastructure alone. We'll help you navigate.`, 
+        description: `Your infrastructure is the core of your business. There is no reason to navigate this complex infrastructure alone. We'll help you navigate.`,
         icon: 'clarity:cloud-network-line',
       },
     ]}
   />
-  <Prices title="Our prices" subtitle="Choose the plan that works for your business."
-    prices={[
-      {
-        title: 'Pay-as-You-Go',
-        subtitle: 'Great for low-volume support',
-        price: 25,
-        period: 'per ticket',
-        items: [
-          {
-            description: '24/7 Support for Tier 1 issues',
-          },
-          {
-            description: 'Simplified ticket submission',
-          },
-          {
-            description: 'Local IT Support Team',
-          },
-          {
-            description: 'Great for small businesses',
-          },
-        ],
-        callToAction: {
-          target: '',
-          text: 'Get started',
-          href: '/contact?ref=payasyougo',
-        },
-      },
-      {
-        title: 'Monthly Subscription',
-        subtitle: 'Perfect for growing businesses',
-        price: 300,
-        period: 'Per Month',
-        items: [
-          {
-            description: 'Unlimited Tier 1 support',
-          },
-          {
-            description: 'Priority support queue',
-          },
-          {
-            description: 'Quarterly IT reviews',
-          },
-          {
-            description: 'Discounted Tier 2+ support',
-          },
-        ],
-        callToAction: {
-          target: '_blank',
-          text: 'Get started',
-          href: '/contact?ref=monthly',
-        },
-        hasRibbon: true,
-        ribbonTitle: 'popular',
-      },
-      {
-        title: 'Enterprise Support',
-        subtitle: 'Best for larger organizations',
-        price: '700',
-        period: 'Month',
-        items: [
-          {
-            description: '1-Hour ticket response time',
-          },
-          {
-            description: 'Monthly IT reviews',
-          },
-          {
-            description: 'Customized Support Portal',
-          },
-          {
-            description: 'Yearly IT Roadmap',
-          },
-        ],
-        callToAction: {
-          target: '_blank',
-          text: 'Get started',
-          href: '/contact?ref=enterprise',
-        },
-      },
-    ]} />
-
+  <OurPrice />
   <Content
     isReversed
     tagline="Your Personalized Helpdesk Tech Staff"
@@ -175,8 +102,7 @@ const metadata = {
     items={[
       {
         title: 'Tier 1 and 2+ Support',
-        description:
-          `Stop letting tech issues grind your business to a halt. Problems happen, we get it, and wasting time is not an option when you need to keep your business moving forward.`,
+        description: `Stop letting tech issues grind your business to a halt. Problems happen, we get it, and wasting time is not an option when you need to keep your business moving forward.`,
       },
       {
         title: 'Rapid Response Times',
@@ -184,15 +110,18 @@ const metadata = {
       },
       {
         title: 'Long Term Partnerships',
-        description: `Your best option is to align with a partner you can trust with critical issues and who's willing to help you navigate modernization and growth, even when it reduces billable hours.`, 
+        description: `Your best option is to align with a partner you can trust with critical issues and who's willing to help you navigate modernization and growth, even when it reduces billable hours.`,
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
       alt: 'Local IT Support Services Image',
-    }}>
+    }}
+  >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Remote and Onsite Technical Support</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Remote and Onsite Technical Support
+      </h3>
       We ensure our local team can help you with your onsite and remote IT needs.
     </Fragment>
 
@@ -224,12 +153,12 @@ const metadata = {
       },
       {
         title: 'IT Project Management',
-        description:`We are helping clients navigate the complexities of major IT projects. We help with everything from requirements gathering to implementation.`, 
+        description: `We are helping clients navigate the complexities of major IT projects. We help with everything from requirements gathering to implementation.`,
         icon: 'flat-color-icons:timeline',
       },
       {
         title: 'Business Process Analysis',
-        description: `This analysis differs from the typical 'you're doing it wrong' analysis. We work to understand the unique business you run so we deliver perfect solutions.`, 
+        description: `This analysis differs from the typical 'you're doing it wrong' analysis. We work to understand the unique business you run so we deliver perfect solutions.`,
         icon: 'flat-color-icons:advertising',
       },
       {
@@ -250,10 +179,11 @@ const metadata = {
       // },
       {
         title: 'Security Management',
-        description: `In the age of constant threats, we're helping safeguard business data and digital assets, giving our clients peace of mind.`, 
+        description: `In the age of constant threats, we're helping safeguard business data and digital assets, giving our clients peace of mind.`,
         icon: 'flat-color-icons:privacy',
       },
-    ]}>
+    ]}
+  >
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
@@ -304,7 +234,6 @@ const metadata = {
       },
     ]} /> -->
 
-
   <!-- <Stats
     stats={[
       { title: 'Tickets', amount: '4,027' },
@@ -324,12 +253,15 @@ const metadata = {
         // target: '_blank',
         icon: 'line-md:clipboard-to-clipboard-check-transition',
       },
-    ]}>
+    ]}
+  >
     <Fragment slot="title">
       Central Illinois <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">HelpDesk</span>
     </Fragment>
     <Fragment slot="subtitle">
-      <span class="text-justify">You've made it this far, sign up, and let's start today. We can't wait to help you with your IT needs.</span>
+      <span class="text-justify"
+        >You've made it this far, sign up, and let's start today. We can't wait to help you with your IT needs.</span
+      >
     </Fragment>
   </CallToAction>
 </Layout>

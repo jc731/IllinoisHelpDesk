@@ -1,0 +1,81 @@
+---
+import Prices from '../widgets/Pricing.astro';
+---
+
+<Prices
+  title="Our prices"
+  subtitle="Choose the option that works for your business"
+  prices={[
+    {
+      title: 'Pay-as-You-Go',
+      subtitle: 'Great for low-volume support',
+      price: 25,
+      period: 'per ticket',
+      items: [
+        {
+          description: '24/7 Support for Tier 1 issues',
+        },
+        {
+          description: 'Simplified ticket submission',
+        },
+        {
+          description: 'Great for small businesses',
+        },
+      ],
+      callToAction: {
+        target: '',
+        text: 'Get started',
+        href: '/contact?ref=payasyougo',
+      },
+    },
+    {
+      title: 'essentials',
+      subtitle: 'Great for low volume support',
+      price: 299,
+      period: 'per month',
+      items: [
+        {
+          description: 'Unlimited Remote Tier 1 Support',
+        },
+        {
+          description: '48-Hour Ticket Response Time',
+        },
+        {
+          description: 'Free Project Consultations',
+        },
+      ],
+      callToAction: {
+        target: '',
+        text: 'Get started',
+        href: '/contact?ref=getStarted',
+      },
+      hasRibbon: true,
+      ribbonTitle: 'popular',
+    },
+    {
+      title: 'Rapid Response',
+      subtitle: 'Perfect for growing businesses',
+      price: 699,
+      period: 'Per Month',
+      items: [
+        {
+          description: 'Everything from Essentials',
+        },
+        {
+          description: '24-Hour Ticket Response Time',
+        },
+        {
+          description: 'Unlimited Remote Tier 2 Support',
+        },
+        {
+          description: 'Quarterly Technology Reviews',
+        },
+      ],
+      callToAction: {
+        target: '',
+        text: 'Get started',
+        href: '/contact?ref=rapid',
+      },
+    },
+  ]}
+/>
