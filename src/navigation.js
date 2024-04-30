@@ -9,24 +9,24 @@ export const headerData = {
           text: 'Tier 1 Support',
           href: getPermalink('/tier1'),
         },
-        // {
-        //   text: 'Tier 2 Support',
-        //   href: getPermalink('/tier2'),
-        // },
+        {
+          text: 'Tier 2 Support',
+          href: getPermalink('/tier2'),
+        },
       ],
     },
     {
       text: 'Knowledge Base',
       href: getPermalink('/knowledgebase'),
     }
-  //   // {
-  //   //   text: 'IT Project Support',
-  //   //   href: '/projectmanagement'
-  //   // },
-  //   // {
-  //   //   text: 'Start Ups',
-  //   //   href: '/startups',
-  //   // },
+    //   // {
+    //   //   text: 'IT Project Support',
+    //   //   href: '/projectmanagement'
+    //   // },
+    //   // {
+    //   //   text: 'Start Ups',
+    //   //   href: '/startups',
+    //   // },
   ],
   actions: [{ text: 'Contact Us', href: '/contact' }],
 }
