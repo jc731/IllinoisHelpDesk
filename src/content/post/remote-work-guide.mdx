@@ -7,6 +7,8 @@ category: Guides
 tags:
   - IT Support
   - Security
+  - Remote Work
+  - Work from Home
 metadata:
   canonical: https://www.centralillinoishelpdesk.com/remote-work-guide/
 ---
