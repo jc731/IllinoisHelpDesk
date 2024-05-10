@@ -3,7 +3,7 @@ site:
   site: 'https://centralillinoishelpdesk.com'
   base: '/'
   trailingSlash: false
-  googleSiteVerificationId: 'x0PSZzKbguRIkWAuV2GEK8Re'
+  googleSiteVerificationId:
 
 # Default SEO metadata
 metadata:
