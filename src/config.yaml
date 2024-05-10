@@ -3,7 +3,7 @@ site:
   site: 'https://centralillinoishelpdesk.com'
   base: '/'
   trailingSlash: false
-  googleSiteVerificationId: 
+  googleSiteVerificationId: 'x0PSZzKbguRIkWAuV2GEK8Re'
 
 # Default SEO metadata
 metadata:
@@ -62,7 +62,7 @@ apps:
 analytics:
   vendors:
     googleAnalytics:
-      id: "G-R50MS9PEC2"
+      id: 'G-R50MS9PEC2'
 
 ui:
   theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
