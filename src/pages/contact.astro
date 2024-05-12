@@ -2,25 +2,22 @@
 import Layout from '~/layouts/PageLayout.astro';
 import ContactFormStatic from '~/components/ui/NetForm.astro';
 import Features2 from '~/components/widgets/Features2.astro';
-import HeroText from '~/components/widgets/HeroText.astro'
+import HeroText from '~/components/widgets/HeroText.astro';
 const metadata = {
   title: 'Contact',
-}
-
-
+};
 ---
 
 <Layout metadata={metadata}>
   <HeroText tagline="Let's Connect" title="Contact Us!" />
   <ContactFormStatic />
 
-
   <Features2
     title="We are here to help!"
     items={[
       {
         title: 'General support',
-        description: `We're here to help you get back up and moving. If you're currently experiencing some technical issues, email us now at: <br /><br /> support@centralillinoishelpdesk.com.`
+        description: `We're here to help you get back up and moving. If you're currently experiencing some technical issues, email us now at: <br /><br /> support@centralillinoishelpdesk.com.`,
       },
       {
         title: 'Project Support',
@@ -48,5 +45,6 @@ const metadata = {
       //   description: 'Serving Central Illinois',
       //   icon: 'tabler:map-pin',
       // },
-    ]}  />
+    ]}
+  />
 </Layout>

@@ -18,7 +18,7 @@ export const headerData = {
     {
       text: 'Knowledge Base',
       href: getPermalink('/knowledgebase'),
-    }
+    },
     //   // {
     //   //   text: 'IT Project Support',
     //   //   href: '/projectmanagement'
@@ -29,7 +29,7 @@ export const headerData = {
     //   // },
   ],
   actions: [{ text: 'Contact Us', href: '/contact' }],
-}
+};
 
 export const footerData = {
   links: [
@@ -68,10 +68,8 @@ export const footerData = {
     // },
     {
       title: 'Knowledge Base',
-      links: [
-        { text: 'Tips, Tricks, and Guides', href: '/knowledgebase' },
-      ],
-    }
+      links: [{ text: 'Tips, Tricks, and Guides', href: '/knowledgebase' }],
+    },
   ],
   secondaryLinks: [
     // { text: 'Terms', href: getPermalink('/terms') },
@@ -87,4 +85,4 @@ export const footerData = {
   footNote: `
     Powered by <a class="text-orange-500 hover:underline" href="https://unisyntechnologies.com"> UniSyn Technologies</a> · All rights reserved.
   `,
-}
+};
