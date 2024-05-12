@@ -37,7 +37,7 @@ export const footerData = {
       title: 'Helpdesk Services',
       links: [
         { text: 'Tier 1 Support', href: '/tier1' },
-        // { text: 'Tier 2 Support', href: '/helpdesk/tier2' },
+        { text: 'Tier 2 Support', href: '/helpdesk/tier2' },
       ],
     },
     // {
@@ -68,7 +68,7 @@ export const footerData = {
     // },
     {
       title: 'Knowledge Base',
-      links: [{ text: 'Tips, Tricks, and Guides', href: '/knowledgebase' }],
+      links: [{ text: 'Tips, Tricks, and Guides', href: getBlogPermalink() }],
     },
   ],
   secondaryLinks: [
