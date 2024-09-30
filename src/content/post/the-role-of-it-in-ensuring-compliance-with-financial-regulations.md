@@ -2,7 +2,7 @@
 publishDate: 2024-07-02  
 title: The Role of IT in Ensuring Compliance with Financial Regulations  
 excerpt: Understand how IT solutions can help your accounting firm comply with financial regulations, avoid penalties, and streamline operations.  
-image:  
+image: 'images/blog/it-audit.jpg' 
 category: Compliance Technology  
 tags:
   - Compliance

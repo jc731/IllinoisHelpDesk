@@ -1,8 +1,8 @@
 ---
 publishDate: 2024-05-05  
-title: Cloud Storage Solutions for Accounting Firms: Safe and Accessible Data  
+title: 'Cloud Storage Solutions for Accounting Firms: Safe and Accessible Data'
 excerpt: Learn how cloud storage solutions can enhance data security, accessibility, and cost-effectiveness for accounting firms.  
-image:  
+image: '/images/blog/digital-cloud.jpg' 
 category: Cloud Computing  
 tags:
   - Cloud Storage

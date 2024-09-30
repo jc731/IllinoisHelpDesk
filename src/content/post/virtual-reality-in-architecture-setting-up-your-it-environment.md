@@ -1,8 +1,8 @@
 ---
 publishDate: 2024-09-12  
-title: Virtual Reality in Architecture: Setting Up Your IT Environment  
+title: 'Virtual Reality in Architecture: Setting Up Your IT Environment' 
 excerpt: Step into the future of architecture with virtual reality. Learn how to set up your IT environment to harness the full potential of VR in your projects.  
-image: An architect using a VR headset to explore a virtual building design.  
+image: 'images/blog/vrheadset.jpg' 
 category: Virtual Reality  
 tags:
   - Virtual Reality

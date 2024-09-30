@@ -1,8 +1,8 @@
 ---
 publishDate: 2023-09-30  
-title: Automating Tax Calculations: IT Tools That Save Time  
+title: 'Automating Tax Calculations: IT Tools That Save Time'
 excerpt: Discover how automating tax calculations with the right IT tools can reduce errors, save time, and alleviate stress during tax season.  
-image:  
+image: /images/blog/accounting-taxes.jpg
 category: Tax Technology  
 tags:
   - Tax Automation

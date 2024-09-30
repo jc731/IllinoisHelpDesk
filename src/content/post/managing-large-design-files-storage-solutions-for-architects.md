@@ -1,8 +1,8 @@
 ---
 publishDate: 2024-08-22  
-title: Managing Large Design Files: Storage Solutions for Architects  
+title: 'Managing Large Design Files: Storage Solutions for Architects'
 excerpt: Learn how to efficiently manage and store large architectural design files, keeping your projects running smoothly and securely.  
-image: An architect managing large files on a computer with cloud storage icons.  
+image: './images/blog/storage.jpg'
 category: Data Management  
 tags:
   - Large File Management

@@ -2,7 +2,7 @@
 publishDate: 2023-12-12  
 title: Essential IT Maintenance for Accounting Offices During Tax Season  
 excerpt: Learn how proper IT maintenance can keep your accounting firm running smoothly during the busy tax season, avoiding downtime and enhancing performance.  
-image:  
+image: /images/blog/it-maintenance.jpg
 category: IT Maintenance  
 tags:
   - IT Maintenance

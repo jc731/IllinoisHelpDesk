@@ -1,8 +1,8 @@
 ---
 publishDate: 2024-09-05  
-title: Secure Sharing of Design Plans: IT Best Practices  
+title: 'Secure Sharing of Design Plans: IT Best Practices' 
 excerpt: Learn how to securely share your architectural design plans and protect your intellectual property with these IT best practices.  
-image: A secure digital lock over architectural blueprints on a screen.  
+image: './images/blog/it-security.jpg' 
 category: Data Security  
 tags:
   - Secure File Sharing
