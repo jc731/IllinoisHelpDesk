@@ -1,18 +1,14 @@
 ---
-import Input from '~/components/ui/forms/Input.astro'
-import FormItem from '~/components/ui/forms/FormItem.astro'
-import PhoneInput from '~/components/ui/forms/PhoneInput.astro'
-export const prerender = false
-
+import Input from '~/components/ui/forms/Input.astro';
+import FormItem from '~/components/ui/forms/FormItem.astro';
+import PhoneInput from '~/components/ui/forms/PhoneInput.astro';
+export const prerender = false;
 ---
-<div class="flex flex-col max-w-[40rem] mx-auto border rounded-xs border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 shadow p-2 sm:p-3 lg:p-6 w-full">
-  <form 
-    netlify 
-    netlify-honeypot 
-    name="ContactUs" 
-    method="POST" 
-    action="/success"
-  >
+
+<div
+  class="flex flex-col max-w-[40rem] mx-auto border rounded-xs border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 shadow p-2 sm:p-3 lg:p-6 w-full"
+>
+  <form netlify netlify-honeypot name="ContactUs" method="POST" action="/success">
     <p class="hidden">
       <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
     </p>
@@ -21,20 +17,27 @@ export const prerender = false
     <FormItem htmlFor="name" type="text" label="Name" id="name" placeholder="Your Name" required>
       <span slot="label">Name</span>
       <svg slot="icon" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-        <path d="M7 8a3 3 0 100-6 3 3 0 000 6zM14.5 9a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM1.615 16.428a1.224 1.224 0 01-.569-1.175 6.002 6.002 0 0111.908 0c.058.467-.172.92-.57 1.174A9.953 9.953 0 017 18a9.953 9.953 0 01-5.385-1.572zM14.5 16h-.106c.07-.297.088-.611.048-.933a7.47 7.47 0 00-1.588-3.755 4.502 4.502 0 015.874 2.636.818.818 0 01-.36.98A7.465 7.465 0 0114.5 16z" />
+        <path
+          d="M7 8a3 3 0 100-6 3 3 0 000 6zM14.5 9a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM1.615 16.428a1.224 1.224 0 01-.569-1.175 6.002 6.002 0 0111.908 0c.058.467-.172.92-.57 1.174A9.953 9.953 0 017 18a9.953 9.953 0 01-5.385-1.572zM14.5 16h-.106c.07-.297.088-.611.048-.933a7.47 7.47 0 00-1.588-3.755 4.502 4.502 0 015.874 2.636.818.818 0 01-.36.98A7.465 7.465 0 0114.5 16z"
+        ></path>
       </svg>
     </FormItem>
     <FormItem htmlFor="email" type="email" label="Email" id="email" placeholder="you@example.com" required>
       <span slot="label">Email</span>
       <svg slot="icon" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-        <path d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z" />
-        <path d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z" />
+        <path d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z"></path>
+        <path d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z"></path>
       </svg>
     </FormItem>
     <PhoneInput />
     <div class="mb-3 relative rounded-md shadow-sm">
       <div class="mt-2">
-      <textarea rows="4" name="comment" id="comment" class="block w-full rounded-md border-0 py-1.5 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6" placeholder="Let us know how we can help you out"></textarea>
+        <textarea
+          rows="4"
+          name="comment"
+          id="comment"
+          class="block w-full rounded-md border-0 py-1.5 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6"
+          placeholder="Let us know how we can help you out"></textarea>
       </div>
     </div>
     <button type="submit" class="btn-primary px-20 rounded-md">Submit</button>
@@ -44,10 +47,10 @@ export const prerender = false
   <p class="text-sm text-gray-600 dark:text-gray-400">Our team typically responds within 24 hours.</p>
 </div>
 <script>
-window.onload = () => {
-  const urlSearchParams = new URLSearchParams(window.location.search);
-  const params = Object.fromEntries(urlSearchParams.entries())
-  const referrerInput = document.getElementById('referrer') as HTMLInputElement
-  referrerInput.value = params.ref
-}
+  window.onload = () => {
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const params = Object.fromEntries(urlSearchParams.entries());
+    const referrerInput = document.getElementById('referrer') as HTMLInputElement;
+    referrerInput.value = params.ref;
+  };
 </script>
