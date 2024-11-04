@@ -2,7 +2,7 @@
 publishDate: 2024-08-15
 title: Software Solutions for Efficient Architectural Design
 excerpt: Discover top-notch software solutions that streamline your architectural design process, enhancing precision, efficiency, and creativity.
-image: './images/blog/architect-software.jpg'
+image: /images/blog/architect-software.jpg
 category: Architectural Technology
 tags:
   - Architectural Software

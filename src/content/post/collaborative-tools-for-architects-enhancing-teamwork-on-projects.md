@@ -2,7 +2,7 @@
 publishDate: 2024-08-29
 title: 'Collaborative Tools for Architects: Enhancing Teamwork on Projects'
 excerpt: Discover the best collaborative tools that ensure your architectural projects are a symphony of coordinated effort, enhancing creativity and efficiency.
-image: '/images/blog/collaboration.jpg'
+image: /images/blog/collaboration.jpg
 category: Collaboration
 tags:
   - Collaboration Tools
