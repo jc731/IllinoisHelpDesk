@@ -1,9 +1,9 @@
 ---
-publishDate: 2023-08-15  
-title: 'Enhancing Remote Access for Accountants: Tools and Security' 
-excerpt: Learn how to enhance remote access for your accounting team with the right tools and security measures to maintain productivity and data safety.  
+publishDate: 2023-08-15
+title: 'Enhancing Remote Access for Accountants: Tools and Security'
+excerpt: Learn how to enhance remote access for your accounting team with the right tools and security measures to maintain productivity and data safety.
 image: /images/blog/accounting-remote.jpg
-category: Remote Work  
+category: Remote Work
 tags:
   - Remote Access
   - Accounting Tools

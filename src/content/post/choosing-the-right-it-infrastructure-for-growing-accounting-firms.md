@@ -1,9 +1,9 @@
 ---
-publishDate: 2023-06-21  
-title: Choosing the Right IT Infrastructure for Growing Accounting Firms  
-excerpt: Discover how to select and implement an IT infrastructure that supports your accounting firm's growth and future-proofs your business.  
-image: /images/blog/infrastructure.jpg 
-category: IT Infrastructure  
+publishDate: 2023-06-21
+title: Choosing the Right IT Infrastructure for Growing Accounting Firms
+excerpt: Discover how to select and implement an IT infrastructure that supports your accounting firm's growth and future-proofs your business.
+image: /images/blog/infrastructure.jpg
+category: IT Infrastructure
 tags:
   - IT Infrastructure
   - Accounting Firms

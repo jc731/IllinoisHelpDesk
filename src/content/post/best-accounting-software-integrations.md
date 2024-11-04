@@ -1,9 +1,9 @@
 ---
-publishDate: 2024-02-14  
-title: Best Accounting Software Integrations for Enhanced Productivity  
-excerpt: Discover how integrating your accounting software with other tools can streamline processes, reduce manual work, and boost your firm's efficiency and accuracy.  
+publishDate: 2024-02-14
+title: Best Accounting Software Integrations for Enhanced Productivity
+excerpt: Discover how integrating your accounting software with other tools can streamline processes, reduce manual work, and boost your firm's efficiency and accuracy.
 image: /images/blog/accounting-software.jpg
-category: Accounting Technology  
+category: Accounting Technology
 tags:
   - Software Integrations
   - Productivity

@@ -1,9 +1,9 @@
 ---
-publishDate: 2024-01-25  
+publishDate: 2024-01-25
 title: 'Backup Strategies for Financial Data: Preventing Data Loss'
-excerpt: Explore effective backup strategies to protect your accounting firm's financial data from loss and ensure business continuity.  
+excerpt: Explore effective backup strategies to protect your accounting firm's financial data from loss and ensure business continuity.
 image: /images/blog/storage.jpg
-category: Data Backup  
+category: Data Backup
 tags:
   - Data Backup
   - Financial Data

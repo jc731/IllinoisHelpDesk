@@ -1,9 +1,9 @@
 ---
-publishDate: 2023-11-22  
+publishDate: 2023-11-22
 title: 'Secure Your Clients Financial Data: Advanced Cybersecurity Tips'
-excerpt: Learn advanced cybersecurity measures to protect your clients' sensitive financial data, including multi-factor authentication, encryption, and employee training.  
+excerpt: Learn advanced cybersecurity measures to protect your clients' sensitive financial data, including multi-factor authentication, encryption, and employee training.
 image: /images/blog/it-security.jpg
-category: Cybersecurity  
+category: Cybersecurity
 tags:
   - Cybersecurity
   - Data Protection
